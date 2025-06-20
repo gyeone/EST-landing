@@ -5,130 +5,195 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/font.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/mobile.css/" />
     </head>
     <body>
-        <header>
+        <header class="header">
             <h1>
-                <img src="./images/logo.svg" alt="" />
+                <img
+                    class="header__logo"
+                    src="./images/logo.svg"
+                    alt="호두 로고"
+                />
             </h1>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Support</a></li>
-                </ul>
-            </nav>
-            <button type="button">Download</button>
+            <div class="header__menu">
+                <nav>
+                    <ul class="header__ul">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </nav>
+                <button class="button" type="button">Download</button>
+            </div>
         </header>
         <main>
             <section class="home">
                 <div class="home__contents">
-                    <h2>
-                        Lorem Ipsum is simply dummy text of the printing and
+                    <h2 class="home__title title--bold title--size">
+                        Lorem Ipsum is simply<br /><span>dummy text</span> of
+                        the printing and
                     </h2>
-                    <p>
+                    <p class="home__content">
                         Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
+                        typesetting industry.<br />Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
                         when an unknown
                     </p>
-                    <button type="button">Download</button>
+                    <button class="button" type="button">Download</button>
                 </div>
-                <img src="./images/box-cat.png" alt="박스를 뒤집어쓴 호두" />
+                <img
+                    class="home__cat"
+                    src="./images/box-cat.png"
+                    alt="박스를 뒤집어쓴 호두"
+                />
             </section>
             <section class="about">
-                <img src="./images/img_4.jpg" alt="침대에 누워있는 호두" />
-                <div>
-                    <h2>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        dummy text
-                    </h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                    </p>
-                </div>
-                <article>
-                    <header>
-                        <h2>dummy text of the printing and dummy</h2>
-                        <p>
+                <div class="about__main">
+                    <img
+                        class="about__cat"
+                        src="./images/img_4.jpg"
+                        alt="침대에 누워있는 호두"
+                    />
+                    <div class="about__contents">
+                        <h2 class="about__title title--bold">
+                            Lorem Ipsum is simply<br />dummy text of the
+                            printing<br />and dummy text
+                        </h2>
+                        <p class="about__content">
                             Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown
+                            typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <article class="article">
+                    <header class="article__header">
+                        <h2 class="article__title title--bold title--size">
+                            dummy text of the printing and dummy
+                        </h2>
+                        <p class="article__content">
+                            Lorem Ipsum is simply
+                            <span class="color--orange">dummy text</span> of the
+                            printing and typesetting industry.<br />
+                            Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s, when an unknown
                         </p>
                     </header>
-                    <main>
+                    <main class="article__img">
                         <img
+                            class="article__cat"
                             src="./images/img_1.jpg"
                             alt="캣타워에 올라가있는 호두"
                         />
                         <img
+                            class="article__cat"
                             src="./images/img_2.jpg"
                             alt="등지고 벽 보는 호두"
                         />
                         <img
+                            class="article__cat article__cat--margin"
                             src="./images/img_3.jpg"
                             alt="침대 옆에서 쳐다보고있는 호두"
                         />
                     </main>
-                    <footer>
-                        <p>
+                    <footer class="article__more">
+                        <p class="more__content">
                             Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
+                            typesetting industry.<br />Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s,
-                            when an unknown Ipsum is simply dummy text of the
-                            printing and typesetting industry.
+                            when an unknown<br />Ipsum is simply dummy text of
+                            the printing and typesetting industry.
                         </p>
-                        <button type="button">Learn More</button>
+                        <button class="button more__button" type="button">
+                            Learn More
+                        </button>
                     </footer>
                 </article>
+                <form class="support">
+                    <div class="support__contents">
+                        <h2 class="support__title title--bold">
+                            Subscribe to our Blog post
+                        </h2>
+                        <p class="support__content">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.<br />Lorem Ipsum has been the
+                            industry's standard dummy text
+                        </p>
+                    </div>
+                    <img class="email__img" src="./images/mail.svg" alt="" />
+                    <button class="button support__button" type="button">
+                        Subscribe
+                    </button>
+                    <input
+                        class="email"
+                        type="email"
+                        placeholder="Enter your e-mail address"
+                    />
+                </form>
             </section>
-            <form class="support">
-                <div>
-                    <h2>Subscribe to our Blog post</h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text
-                    </p>
-                </div>
-                <input type="email" />
-                <button type="button">Subscribe</button>
-            </form>
+
+            <picture>
+                <source
+                    media="(min-width: 391px)"
+                    srcset="./images/img_5_pc.png"
+                />
+                <source
+                    media="(max-width: 390px)"
+                    srcset="./images/img_5.jpg"
+                />
+                <img src="./images/img_5.jpg" alt="호두 얼굴" />
+            </picture>
         </main>
-        <footer>
-            <img src="./images/logo.png" alt="" />
-            <ul>
-                <li>
+        <footer class="footer">
+            <img class="footer__logo" src="./images/logo.png" alt="" />
+            <ul class="footer__links">
+                <li class="footer__link">
                     <a href="">
-                        <img src="./images/blog.svg" alt="블로그" />
+                        <img
+                            class="link__img"
+                            src="./images/blog.svg"
+                            alt="블로그"
+                        />
                     </a>
                 </li>
-                <li>
+                <li class="footer__link">
                     <a href="">
-                        <img src="./images/instagram.svg" alt="인스타그램" />
+                        <img
+                            class="link__img"
+                            src="./images/instagram.svg"
+                            alt="인스타그램"
+                        />
                     </a>
                 </li>
-                <li>
+                <li class="footer__link">
                     <a href="">
-                        <img src="./images/facebook.svg" alt="페이스북" />
+                        <img
+                            class="link__img"
+                            src="./images/facebook.svg"
+                            alt="페이스북"
+                        />
                     </a>
                 </li>
-                <li>
+                <li class="footer__link">
                     <a href="">
-                        <img src="./images/youtube.svg" alt="유튜브" />
+                        <img
+                            class="link__img"
+                            src="./images/youtube.svg"
+                            alt="유튜브"
+                        />
                     </a>
                 </li>
             </ul>
         </footer>
         <dialog>
             <img src="./images/cat-subscribe.png" alt="볼빨간 호두" />
-            <h2>Thank you!</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-            <button type="button">OK! I Love HODU</button>
+            <h2 class="middle__title color--orange">Thank you!</h2>
+            <p class="modal__content">
+                Lorem Ipsum is simply dummy text of the printing industry.
+            </p>
+            <button class="button" type="button">OK! I Love HODU</button>
         </dialog>
     </body>
 </html>
