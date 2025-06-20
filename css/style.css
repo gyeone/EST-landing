@@ -54,7 +54,7 @@ body {
 
 .home {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     height: 900px;
     top: -102px;
@@ -104,7 +104,7 @@ body {
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 82.6rem;
     height: 160x;
     padding: 4.5rem max(32rem);
@@ -151,7 +151,7 @@ body {
 
 .about__main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 11rem;
     text-align: left;
 }
