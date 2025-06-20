@@ -34,11 +34,11 @@ body {
     align-items: center;
     justify-content: center;
     position: sticky;
-    height: 102px;
     top: 0;
+    height: 102px;
     padding: 2.6rem 32rem;
     background-color: var(--bg-beige);
-    z-index: 30;
+    z-index: 20;
     gap: 75.6rem;
 }
 
@@ -56,8 +56,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 900px;
-    top: -102px;
+    height: 798px;
     padding: 0 32rem;
     gap: 12.8rem;
     background-color: var(--bg-beige);
@@ -67,6 +66,8 @@ body {
     position: relative;
     height: 1548px;
     padding: 8rem 32rem 0;
+    background-color: var(--bg-white);
+    z-index: 10;
 }
 
 .article {
@@ -106,7 +107,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 82.6rem;
-    height: 160x;
+    height: 160px;
     padding: 4.5rem max(32rem);
 }
 
@@ -129,7 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-top: 30.2rem;
+    margin-top: 20rem;
     gap: 4rem;
 }
 
@@ -143,10 +144,9 @@ body {
 }
 
 .home__cat {
-    margin-top: 13.4rem;
+    margin-top: 3.2rem;
     width: 415px;
     height: 890px;
-    /* z-index: 10; */
 }
 
 .about__main {
