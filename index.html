@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/font.css" />
         <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/mobile.css/" />
+        <link rel="stylesheet" href="./css/mobile.css" />
     </head>
     <body>
         <header class="header">
@@ -28,13 +28,31 @@
                 </nav>
                 <button class="button" type="button">Download</button>
             </div>
+            <button class="moobile__button__menu" type="button"></button>
+            <div class="mobile__menu">
+                <button class="menu__back" type="button">
+                    <img src="./images/arrow-right.svg" alt="뒤로가기" />
+                </button>
+                <nav>
+                    <ul class="mobile__menu__ul">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </nav>
+                <button class="button mobile__menu__button" type="button">
+                    Download
+                </button>
+            </div>
         </header>
         <main>
             <section class="home">
                 <div class="home__contents">
                     <h2 class="home__title title--bold title--size">
-                        Lorem Ipsum is simply<br /><span>dummy text</span> of
-                        the printing and
+                        Lorem Ipsum is simply<br /><span class="line-break"
+                            >dummy text</span
+                        >
+                        of the printing and
                     </h2>
                     <p class="home__content">
                         Lorem Ipsum is simply dummy text of the printing and
@@ -54,7 +72,7 @@
                 <div class="about__main">
                     <img
                         class="about__cat"
-                        src="./images/img_4.jpg"
+                        src="./images/img_4.png"
                         alt="침대에 누워있는 호두"
                     />
                     <div class="about__contents">
@@ -133,7 +151,6 @@
                     />
                 </form>
             </section>
-
             <picture class="background">
                 <source
                     media="(min-width: 391px)"
@@ -141,9 +158,9 @@
                 />
                 <source
                     media="(max-width: 390px)"
-                    srcset="./images/img_5.jpg"
+                    srcset="./images/img_5.png"
                 />
-                <img src="./images/img_5.jpg" alt="호두 얼굴" />
+                <img src="./images/img_5_pc.png" alt="호두 얼굴" />
             </picture>
         </main>
         <footer class="footer">
@@ -185,6 +202,12 @@
                         />
                     </a>
                 </li>
+            </ul>
+            <ul class="footer__more">
+                <li class="footer__more__list">About</li>
+                <li>Blog</li>
+                <li>Support</li>
+                <li>Terms of Use</li>
             </ul>
         </footer>
         <dialog>

@@ -6,6 +6,7 @@
     /* background-color */
     --bg-beige: #f2e9d8;
     --bg-white: #fff;
+    --bg-navy: #263140;
     /* font-size */
     --main-pc-size: 48px;
     --main-mobile-size: 24px;
@@ -21,8 +22,6 @@ html {
 body {
     font-family: "SpoqaHanSansNeo-Regular";
     text-align: center;
-    margin: auto;
-    width: 100%;
     font-size: var(--base-pc-size);
     background-color: var(--bg-white);
 }
@@ -87,7 +86,7 @@ body {
     padding: 5rem 5.8rem;
     border-radius: 30px;
     color: var(--bg-white);
-    background-color: #263140;
+    background-color: var(--bg-navy);
 }
 
 .email {
@@ -100,6 +99,10 @@ body {
 
 .email::placeholder {
     color: #767676;
+}
+
+.background {
+    max-width: 100%;
 }
 
 .footer {
@@ -115,6 +118,14 @@ body {
 
 .header__menu {
     display: flex;
+}
+
+.moobile__button__menu {
+    display: none;
+}
+
+.mobile__menu {
+    display: none;
 }
 
 .header__ul {
@@ -257,6 +268,11 @@ body {
     z-index: 10;
 }
 
+.footer__logo {
+    width: 226px;
+    height: 70px;
+}
+
 .footer__links {
     display: flex;
     gap: 2rem;
@@ -279,6 +295,10 @@ body {
     height: 24px;
 }
 
+.footer__more {
+    display: none;
+}
+
 .modal__content {
     font-size: 14px;
 }
@@ -292,13 +312,6 @@ body {
 .title--size {
     font-size: var(--main-pc-size);
 }
-
-.footer__logo {
-    width: 226px;
-    height: 70px;
-}
-
-/* cat-images */
 
 .color--orange {
     color: var(--color-orange);
