@@ -80,3 +80,8 @@ style.css | PC 스타일 위주로 담겨 있으며, 모바일용 스타일을 �
 ![image](https://github.com/user-attachments/assets/fd9d2fa3-09ff-4e3b-bdce-14a2d4a88301)
 ## 👨‍💻 개발자
   __백기연__
+## 어려웠던 부분과 해결 방안
+### 레이아웃 여백 맞추기
+개발자 도구를 이용해 하나하나 찾아보며 맞춰나갔다.
+
+
