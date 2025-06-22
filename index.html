@@ -3,11 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="canonical" href="https://gyeone.github.io/EST-landing/" />
+        <meta name="description" content="고양이 호두를 소개합니다." />
+        <meta property="og:title" content="고양이 호두" />
+        <meta property="og:type" content="Website" />
+        <meta
+            property="og:url"
+            content="https://gyeone.github.io/EST-landing/"
+        />
+        <meta
+            property="og:image"
+            content="https://gyeone.github.io/EST-landing/images/img_5.png"
+        />
+        <meta property="og:description" content="고양이 호두를 소개합니다." />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/font.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/mobile.css" />
+        <title>고양이 호두</title>
     </head>
     <body>
         <header class="header">
@@ -19,6 +32,7 @@
                 />
             </h1>
             <div class="header__menu">
+                <h2 class="sr-only">홈페이지 메뉴와 다운로드 버튼</h2>
                 <nav>
                     <ul class="header__ul">
                         <li><a href="">Home</a></li>
@@ -29,7 +43,8 @@
                 <button class="button" type="button">Download</button>
             </div>
             <button class="moobile__button__menu" type="button"></button>
-            <div class="mobile__menu">
+            <aside class="mobile__menu">
+                <h2 class="sr-only">홈페이지 사이드 바 메뉴</h2>
                 <button class="menu__back" type="button">
                     <img src="./images/arrow-right.svg" alt="뒤로가기" />
                 </button>
@@ -43,10 +58,11 @@
                 <button class="button mobile__menu__button" type="button">
                     Download
                 </button>
-            </div>
+            </aside>
         </header>
-        <main>
+        <main class="main">
             <section class="home">
+                <h2 class="sr-only">home</h2>
                 <div class="home__contents">
                     <h2 class="home__title title--bold title--size">
                         Lorem Ipsum is simply<br /><span class="line-break"
@@ -69,6 +85,7 @@
                 />
             </section>
             <section class="about">
+                <h2 class="sr-only">고양이 호두에 대한 이미지와 설명글</h2>
                 <div class="about__main">
                     <img
                         class="about__cat"
@@ -130,6 +147,9 @@
                     </footer>
                 </article>
                 <form class="support">
+                    <h2 class="sr-only">
+                        블로그 게시물을 구독하기 위한 메일 주소 입력 폼
+                    </h2>
                     <div class="support__contents">
                         <h2 class="support__title title--bold">
                             Subscribe to our Blog post
@@ -144,11 +164,15 @@
                     <button class="button support__button" type="button">
                         Subscribe
                     </button>
-                    <input
-                        class="email"
-                        type="email"
-                        placeholder="Enter your e-mail address"
-                    />
+                    <label for="form__email">
+                        <input
+                            name="이메일 주소"
+                            class="email"
+                            type="email"
+                            placeholder="Enter your e-mail address"
+                            required
+                        />
+                    </label>
                 </form>
             </section>
             <picture class="background">
@@ -166,6 +190,7 @@
         <footer class="footer">
             <img class="footer__logo" src="./images/logo.png" alt="" />
             <ul class="footer__links">
+                <h2 class="sr-only">소셜 미디어 링크</h2>
                 <li class="footer__link">
                     <a href="">
                         <img
@@ -204,19 +229,27 @@
                 </li>
             </ul>
             <ul class="footer__more">
-                <li class="footer__more__list">About</li>
+                <li>About</li>
                 <li>Blog</li>
                 <li>Support</li>
                 <li>Terms of Use</li>
             </ul>
         </footer>
-        <dialog>
-            <img src="./images/cat-subscribe.png" alt="볼빨간 호두" />
-            <h2 class="middle__title color--orange">Thank you!</h2>
-            <p class="modal__content">
-                Lorem Ipsum is simply dummy text of the printing industry.
-            </p>
-            <button class="button" type="button">OK! I Love HODU</button>
+        <dialog open class="dialog">
+            <div class="dialog__contents">
+                <img
+                    class="dialog__cat"
+                    src="./images/cat-subscribe.png"
+                    alt="볼빨간 호두"
+                />
+                <h2 class="dialog__title color--orange">Thank you!</h2>
+                <p class="dialog__content">
+                    Lorem Ipsum is simply dummy text of the printing industry.
+                </p>
+            </div>
+            <button class="button dialog__button" type="button">
+                OK! I Love HODU
+            </button>
         </dialog>
     </body>
 </html>
