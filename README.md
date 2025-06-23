@@ -37,27 +37,6 @@
  ┃ ┣ 📜reset.css
  ┃ ┗ 📜style.css
  ┣ 📂images
- ┃ ┣ 📜.DS_Store
- ┃ ┣ 📜arrow-left.svg
- ┃ ┣ 📜arrow-right.svg
- ┃ ┣ 📜blog.svg
- ┃ ┣ 📜box-cat.png
- ┃ ┣ 📜cat-subscribe.png
- ┃ ┣ 📜facebook.svg
- ┃ ┣ 📜img_1.jpg
- ┃ ┣ 📜img_2.jpg
- ┃ ┣ 📜img_3.jpg
- ┃ ┣ 📜img_4.png
- ┃ ┣ 📜img_5.png
- ┃ ┣ 📜img_5_pc.png
- ┃ ┣ 📜instagram.svg
- ┃ ┣ 📜logo.png
- ┃ ┣ 📜logo.svg
- ┃ ┣ 📜mail.svg
- ┃ ┣ 📜menu.svg
- ┃ ┣ 📜modal-bg-img.png
- ┃ ┣ 📜top-btn.svg
- ┃ ┗ 📜youtube.svg
  ┗ 📜README.md
 ```
 ### 📂 css 폴더 구조 설명
