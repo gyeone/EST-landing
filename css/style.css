@@ -37,8 +37,11 @@ body {
     text-align: center;
     font-size: var(--base-pc-size);
     background-color: var(--bg-white);
-    height: 2950px;
+    /* max-height: 2950px; */
 }
+
+/* px 단위: width, height 와 같이 고정된 너비와 높이는 px로 선택  */
+/* 나머지 rem 단위 */
 
 /* blocks */
 
@@ -52,14 +55,14 @@ body {
     height: 102px;
     padding: 2.6rem max(32rem);
     background-color: var(--bg-beige);
-    z-index: 20; /* 제일 앞쪽에 배치 */
+    z-index: 10; /* 제일 앞쪽에 배치 */
     gap: clamp(1rem, 40vw, 75.6rem);
 }
 
 .button {
     font-family: "SpoqaHanSansNeo-Bold";
     width: 140px;
-    height: 5rem;
+    height: 50px;
     padding: 0 2.9rem;
     border-radius: 4rem;
     color: var(--color-white);
@@ -94,11 +97,11 @@ body {
     align-items: center;
     text-align: left;
     position: relative;
-    max-width: 128rem;
+    max-width: 1280px;
     height: 200px;
     margin: 9rem auto 0;
     padding: 5rem 5.8rem;
-    border-radius: 30px;
+    border-radius: 3rem;
     color: var(--bg-white);
     background-color: var(--bg-navy);
 }
@@ -107,7 +110,11 @@ body {
     position: relative;
     height: 60px;
     padding: 1.8rem 29.3rem 1.8rem 6.8rem;
-    border-radius: 60px;
+    left: 14rem;
+    border-radius: 6rem;
+    background: url("../images/mail.svg") 24px 24px no-repeat; /* 꾸밈을 위한 이미지 */
+    background-position: 2.8rem 1.8rem;
+    background-color: var(--bg-white);
     border: none;
 }
 
@@ -139,8 +146,8 @@ body {
 
 .scroll-to-top {
     position: fixed; /* 스크롤해도 같은 위치에 고정 */
-    right: 24px;
-    bottom: 184px;
+    right: 2.4rem;
+    bottom: 18.4rem;
     width: 50px;
     height: 50px;
     background-color: var(--bg-white);
@@ -154,13 +161,13 @@ body {
     width: 600px;
     height: 400px;
     position: relative;
-    top: -450px;
+    top: -45rem;
     padding: 0;
     border: none;
     background-color: var(--color-beige);
     background-image: url("../images/modal-bg-img.png"); /* 꾸밈을 위한 이미지 */
     background-size: cover;
-    border-radius: 30px;
+    border-radius: 3rem;
     box-shadow: 0px 0px 30px 0px #00000033;
 }
 
@@ -170,7 +177,7 @@ body {
     display: flex;
 }
 
-.moobile__button__menu {
+.mobile__button__menu {
     display: none;
 }
 
@@ -221,7 +228,7 @@ body {
     width: 660px;
     height: 390px;
     box-shadow: 10px 10px 30px 0px #00000040;
-    border-radius: 30px;
+    border-radius: 3rem;
 }
 
 .about__contents {
@@ -241,7 +248,7 @@ body {
 .article__title {
     color: var(--color-orange);
     margin-bottom: 4rem;
-    height: 6rem;
+    height: 60px;
 }
 
 .article__content {
@@ -262,7 +269,7 @@ body {
     max-width: 378px;
     height: auto; /* 비율 유지 */
     box-shadow: 10px 10px 30px 0px #00000040;
-    border-radius: 30px;
+    border-radius: 3rem;
 }
 
 .article__cat--margin {
@@ -294,7 +301,7 @@ body {
 .support__title {
     font-size: var(--middle-pc-size);
     width: 100%;
-    height: 4.6rem;
+    height: 46px;
     margin-bottom: 1.8rem;
 }
 
@@ -305,19 +312,11 @@ body {
     line-height: 1.8rem;
 }
 
-.email__img {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    left: 178px;
-    z-index: 10; /* 이메일 폼 보다 앞쪽에 배치로 보여지게 함 */
-}
-
 .support__button {
     position: relative;
     width: 136px;
-    left: 519px;
-    z-index: 10; /* 이메일 폼 보다 앞쪽에 배치로 보여지게 함 */
+    top: 0.1rem;
+    right: 0.5rem;
 }
 
 .footer__logo {
@@ -358,11 +357,11 @@ body {
 }
 
 .dialog__contents {
-    width: 100%;
-    height: 272px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 272px;
     padding: 6rem 10.9rem 0rem 10.8rem;
     margin-bottom: 3.8rem;
 }
@@ -400,4 +399,32 @@ body {
 
 .color--orange {
     color: var(--color-orange);
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+    .home {
+        gap: 0;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8rem 32rem 0;
+    }
+
+    .about__main {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .support {
+        flex-direction: column;
+        justify-content: initial;
+        max-width: 326px;
+        height: 348px;
+        margin: 5rem auto 0;
+        padding: 3.6rem 3.2rem 3rem;
+        border-radius: 1.8rem;
+    }
 }

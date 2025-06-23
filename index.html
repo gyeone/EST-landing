@@ -22,8 +22,7 @@
         <link rel="stylesheet" href="./css/mobile.css" />
         <title>고양이 호두</title>
     </head>
-    <body>
-        <div id="top"></div>
+    <body id="top">
         <header class="header">
             <h1>
                 <img
@@ -34,26 +33,25 @@
             </h1>
             <div class="header__menu">
                 <h2 class="sr-only">홈페이지 메뉴와 다운로드 버튼</h2>
-                <nav>
+                <nav class="header__nav">
                     <ul class="header__ul">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Support</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </nav>
                 <button class="button" type="button">Download</button>
             </div>
-            <button class="moobile__button__menu" type="button"></button>
-            <aside class="mobile__menu">
-                <h2 class="sr-only">홈페이지 사이드 바 메뉴</h2>
+            <button class="mobile__button__menu" type="button"></button>
+            <aside class="mobile__menu" aria-label="모바일 메뉴">
                 <button class="menu__back" type="button">
                     <img src="./images/arrow-right.svg" alt="뒤로가기" />
                 </button>
-                <nav>
+                <nav class="aside__nav">
                     <ul class="mobile__menu__ul">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Support</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </nav>
                 <button class="button mobile__menu__button" type="button">
@@ -63,7 +61,6 @@
         </header>
         <main class="main">
             <section class="home">
-                <h2 class="sr-only">home</h2>
                 <div class="home__contents">
                     <h2 class="home__title title--bold title--size">
                         Lorem Ipsum is simply<br /><span class="line-break"
@@ -85,8 +82,10 @@
                     alt="박스를 뒤집어쓴 호두"
                 />
             </section>
-            <section class="about">
-                <h2 class="sr-only">고양이 호두에 대한 이미지와 설명글</h2>
+            <section
+                class="about"
+                aria-label="고양이 호두에 대한 이미지와 설명글"
+            >
                 <div class="about__main">
                     <img
                         class="about__cat"
@@ -147,10 +146,10 @@
                         </button>
                     </footer>
                 </article>
-                <form class="support">
-                    <h2 class="sr-only">
-                        블로그 게시물을 구독하기 위한 메일 주소 입력 폼
-                    </h2>
+                <section
+                    class="support"
+                    aria-label="블로그 게시물을 구독하기 위한 메일 주소 입력 폼"
+                >
                     <div class="support__contents">
                         <h2 class="support__title title--bold">
                             Subscribe to our Blog post
@@ -161,20 +160,21 @@
                             industry's standard dummy text
                         </p>
                     </div>
-                    <img class="email__img" src="./images/mail.svg" alt="" />
-                    <button class="button support__button" type="button">
-                        Subscribe
-                    </button>
-                    <label>
+                    <form class="support__form">
+                        <label for="email" class="sr-only">이메일 주소</label>
                         <input
+                            id="email"
                             name="이메일 주소"
                             class="email"
                             type="email"
                             placeholder="Enter your e-mail address"
                             required
                         />
-                    </label>
-                </form>
+                        <button class="button support__button" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </section>
             </section>
             <picture class="background">
                 <source
@@ -193,7 +193,7 @@
             <h2 class="sr-only">소셜 미디어 링크</h2>
             <ul class="footer__links">
                 <li class="footer__link">
-                    <a href="">
+                    <a href="#">
                         <img
                             class="link__img"
                             src="./images/blog.svg"
@@ -202,7 +202,7 @@
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="">
+                    <a href="#">
                         <img
                             class="link__img"
                             src="./images/instagram.svg"
@@ -211,7 +211,7 @@
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="">
+                    <a href="#">
                         <img
                             class="link__img"
                             src="./images/facebook.svg"
@@ -220,7 +220,7 @@
                     </a>
                 </li>
                 <li class="footer__link">
-                    <a href="">
+                    <a href="#">
                         <img
                             class="link__img"
                             src="./images/youtube.svg"
@@ -230,13 +230,13 @@
                 </li>
             </ul>
             <ul class="footer__more">
-                <li>About</li>
-                <li>Blog</li>
-                <li>Support</li>
-                <li>Terms of Use</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms of Use</a></li>
             </ul>
         </footer>
-        <a href="#top" class="scroll-to-top" title="맨 위로 이동">
+        <a href="#top" class="scroll-to-top" title="페이지 상단으로 이동">
             <img class="scroll-to-top__img" src="./images/top-btn.svg" alt="" />
         </a>
         <dialog open class="dialog">
